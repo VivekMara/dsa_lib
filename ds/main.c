@@ -2,18 +2,11 @@
 #include "ds.h"
 
 int main(){
-    struct DynamicArray arr;
-    init_array(&arr);
-    push(&arr, 1);
-    push(&arr, 2);
-    push(&arr, 2);
-    printf("The length of the array is %d\n", arr.length);
-    for (int i = 0; i < arr.length; i++)
-    {
-        printf("%d ", arr.data[i]);
-    }
-    printf("\n");
-    
-    free_array(&arr);
+    int a = 10, b = 20, c = 30;
+    init_list(&a);
+    append(&b);
+    prepend(&c);
+    print_list();
+    free_list();
     return 0;
 }
